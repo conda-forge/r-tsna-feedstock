@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tsna_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tsna/tsna_{{ version }}.tar.gz
-  sha256: a26b0564490e78cdb55bc4ad36fda6e7cedc0bb6b21d278513dbe620bf0c0027
+  sha256: 29f599d3e774289614608b0fa49e05a09e76e6b15dd1d46988785eaacf2e1a35
 
 build:
   merge_build_host: True  # [win]
