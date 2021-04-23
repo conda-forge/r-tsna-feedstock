@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tsna_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tsna/tsna_{{ version }}.tar.gz
-  sha256: bba4b5e04ba647784581a2137f653f60b4c83cfd726c399556054c5a6d2cbd95
+  sha256: bd5663557ab6a27deda21096e3ab549095d52d57a8f47b878706756acebfb286
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,11 +42,9 @@ test:
 about:
   home: http://statnet.org
   license: GPL-3
-  summary: Temporal SNA tools for continuous- and discrete-time longitudinal networks having
-    vertex, edge, and attribute dynamics stored in the 'networkDynamic' format. This
-    work was supported by grant R01HD68395 from the National Institute of Health.
+  summary: Temporal SNA tools for continuous- and discrete-time longitudinal networks having vertex, edge, and attribute dynamics stored in the 'networkDynamic' format. This work was supported by grant R01HD68395 from the National Institute of Health.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
