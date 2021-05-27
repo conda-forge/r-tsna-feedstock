@@ -41,7 +41,7 @@ test:
 
 about:
   home: http://statnet.org
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Temporal SNA tools for continuous- and discrete-time longitudinal networks having vertex, edge, and attribute dynamics stored in the 'networkDynamic' format. This work was supported by grant R01HD68395 from the National Institute of Health.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
