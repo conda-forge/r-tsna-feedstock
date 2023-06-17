@@ -1,11 +1,11 @@
-About r-tsna
-============
+About r-tsna-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tsna-feedstock/blob/main/LICENSE.txt)
 
 Home: http://statnet.org
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tsna-feedstock/blob/main/LICENSE.txt)
 
 Summary: Temporal SNA tools for continuous- and discrete-time longitudinal networks having vertex, edge, and attribute dynamics stored in the 'networkDynamic' format. This work was supported by grant R01HD68395 from the National Institute of Health.
 
